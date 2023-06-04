@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            .a{
+                border: 5px solid pink;
+                padding: 2px;
+                margin:auto;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <table class="a">
+            <tr>
+                <td>Number 1: </td>
+                <td width="20px"><input type="number" id="i1"></td>
+                <td>Number 2: </td>
+                <td><input type="number" id="i2"></td>
+            </tr>
+            <tr>
+                <td><button onclick="f1()">ADD</button></td>
+                <td><button onclick="f2()">SUB</button></td>
+                <td><button onclick="f3()">MUL</button></td>
+                <td><button onclick="f4()">DIV</button></td>
+            </tr>
+            <tr>
+                <td><div id="o1"></div></td>
+                <td><div id="o2"></div></td>
+                <td><div id="o3"></div></td>
+                <td><div id="o4"></div></td>
+            </tr>
+        </table>
+        <script>
+           
+            function f1()
+            { var a=document.getElementById('i1').value;
+              var b=document.getElementById('i2').value;
+              var c=parseInt(a)+parseInt(b);
+              document.getElementById('o1').innerHTML=c;
+            }
+            function f2()
+            { var a=document.getElementById('i1').value;
+              var b=document.getElementById('i2').value;
+              var c=parseInt(a)-parseInt(b);
+              document.getElementById('o2').innerHTML=c;
+            }
+            function f3()
+            { var a=document.getElementById('i1').value;
+              var b=document.getElementById('i2').value;
+              var c=parseInt(a)*parseInt(b);
+              document.getElementById('o3').innerHTML=c;
+            }
+            function f4()
+            { var a=document.getElementById('i1').value;
+              var b=document.getElementById('i2').value;
+              var c=parseInt(a)/parseInt(b);
+              document.getElementById('o4').innerHTML=c;
+            }
+        </script>
+
+    </body>
+</html>
